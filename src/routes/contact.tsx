@@ -31,7 +31,7 @@ function Contact() {
         <div className="grid gap-16 lg:grid-cols-12">
           <div className="lg:col-span-5 space-y-10">
             <ContactRow icon={<Mail />} label="Email" value="bookings@aaravmehra.com" href="mailto:bookings@aaravmehra.com" />
-            <ContactRow icon={<Instagram />} label="Instagram" value="@aarav.mehra" href="https://instagram.com" />
+            <ContactRow icon={<Instagram />} label="Instagram" value="@adityalives" href="https://www.instagram.com/adityalives/" />
             <ContactRow icon={<MessageCircle />} label="WhatsApp" value="+91 98•••• ••••" href="https://wa.me/91" />
             <ContactRow icon={<MapPin />} label="Based in" value="Mumbai · Available worldwide" />
 
