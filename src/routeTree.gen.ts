@@ -13,7 +13,6 @@ import { Route as ShowreelRouteImport } from './routes/showreel'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as MeasurementsRouteImport } from './routes/measurements'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as ExperienceRouteImport } from './routes/experience'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -38,11 +37,6 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ExperienceRoute = ExperienceRouteImport.update({
-  id: '/experience',
-  path: '/experience',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -63,7 +57,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
   '/gallery': typeof GalleryRoute
   '/measurements': typeof MeasurementsRoute
   '/portfolio': typeof PortfolioRoute
@@ -73,7 +66,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
   '/gallery': typeof GalleryRoute
   '/measurements': typeof MeasurementsRoute
   '/portfolio': typeof PortfolioRoute
@@ -84,7 +76,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
-  '/experience': typeof ExperienceRoute
   '/gallery': typeof GalleryRoute
   '/measurements': typeof MeasurementsRoute
   '/portfolio': typeof PortfolioRoute
@@ -96,7 +87,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/experience'
     | '/gallery'
     | '/measurements'
     | '/portfolio'
@@ -106,7 +96,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/experience'
     | '/gallery'
     | '/measurements'
     | '/portfolio'
@@ -116,7 +105,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/contact'
-    | '/experience'
     | '/gallery'
     | '/measurements'
     | '/portfolio'
@@ -127,7 +115,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
-  ExperienceRoute: typeof ExperienceRoute
   GalleryRoute: typeof GalleryRoute
   MeasurementsRoute: typeof MeasurementsRoute
   PortfolioRoute: typeof PortfolioRoute
@@ -164,13 +151,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/experience': {
-      id: '/experience'
-      path: '/experience'
-      fullPath: '/experience'
-      preLoaderRoute: typeof ExperienceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -199,7 +179,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
-  ExperienceRoute: ExperienceRoute,
   GalleryRoute: GalleryRoute,
   MeasurementsRoute: MeasurementsRoute,
   PortfolioRoute: PortfolioRoute,
