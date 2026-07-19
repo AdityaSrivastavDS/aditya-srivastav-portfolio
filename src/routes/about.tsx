@@ -49,7 +49,7 @@ function About() {
       <section className="container-luxe pb-32">
         <div className="grid gap-12 md:grid-cols-12 items-start">
           <div className="md:col-span-5">
-            <img src={p2} alt="Aarav Mehra" loading="lazy" className="w-full aspect-[4/5] object-cover" />
+            <img src={ABOUT_PORTRAIT} alt="Aarav Mehra" loading="lazy" className="w-full aspect-[4/5] object-cover" />
           </div>
           <div className="md:col-span-7 md:pl-8">
             <div className="space-y-6 text-lg leading-relaxed text-white/75 font-serif">
@@ -94,7 +94,7 @@ function About() {
       </section>
 
       <section className="relative h-[70vh] overflow-hidden">
-        <img src={p7} alt="" className="absolute inset-0 h-full w-full object-cover animate-ken-burns" />
+        <img src={ABOUT_QUOTE_BG} alt="" className="absolute inset-0 h-full w-full object-cover animate-ken-burns" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container-luxe h-full flex items-center">
           <blockquote className="max-w-3xl font-serif italic text-3xl md:text-5xl text-white leading-tight">
