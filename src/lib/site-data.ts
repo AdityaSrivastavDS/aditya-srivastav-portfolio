@@ -1,32 +1,44 @@
-import p1 from "@/assets/p1.jpg";
-import p2 from "@/assets/p2.jpg";
-import p3 from "@/assets/p3.jpg";
-import p4 from "@/assets/p4.jpg";
-import p5 from "@/assets/p5.jpg";
-import p6 from "@/assets/p6.jpg";
-import p7 from "@/assets/p7.jpg";
-import p8 from "@/assets/p8.jpg";
+import couchMood from "@/assets/photos/11_16_30.jpg.asset.json";
+import couchSmile from "@/assets/photos/11_16_25.jpg.asset.json";
+import kurtaPortrait from "@/assets/photos/11_15_34.jpg.asset.json";
+import kurtaFull from "@/assets/photos/p6.jpg.asset.json";
+import kurtaSelfie from "@/assets/photos/11_16_08.jpg.asset.json";
+import leatherJacket from "@/assets/photos/11_15_48.jpg.asset.json";
+import celebration from "@/assets/photos/11_16_18.jpg.asset.json";
 
-export const IMAGES = { p1, p2, p3, p4, p5, p6, p7, p8 };
+const P = {
+  couchMood: couchMood.url,
+  couchSmile: couchSmile.url,
+  kurtaPortrait: kurtaPortrait.url,
+  kurtaFull: kurtaFull.url,
+  kurtaSelfie: kurtaSelfie.url,
+  leatherJacket: leatherJacket.url,
+  celebration: celebration.url,
+};
+
+export const IMAGES = P;
+export const HERO_IMAGE = P.couchMood;
+export const ABOUT_PORTRAIT = P.kurtaPortrait;
+export const ABOUT_QUOTE_BG = P.couchSmile;
 
 export const PORTFOLIO: { src: string; category: string; title: string; h: number }[] = [
-  { src: p1, category: "Headshots", title: "Studio No. 01", h: 520 },
-  { src: p2, category: "Formal", title: "Black Tie", h: 460 },
-  { src: p3, category: "Traditional", title: "Sherwani Series", h: 560 },
-  { src: p4, category: "Fitness", title: "Chiaroscuro", h: 500 },
-  { src: p5, category: "Lifestyle", title: "Off Duty", h: 520 },
-  { src: p6, category: "Commercial", title: "Campaign 24", h: 460 },
-  { src: p7, category: "Editorial", title: "Amber Hour", h: 580 },
-  { src: p8, category: "Editorial", title: "Silhouette", h: 500 },
-  { src: p2, category: "Fashion", title: "Tailored", h: 540 },
-  { src: p1, category: "Western", title: "Monochrome", h: 480 },
-  { src: p4, category: "Fitness", title: "Form Study", h: 500 },
-  { src: p5, category: "Lifestyle", title: "Denim", h: 520 },
+  { src: P.couchMood, category: "Editorial", title: "Chiaroscuro", h: 620 },
+  { src: P.kurtaPortrait, category: "Traditional", title: "Rose Kurta", h: 560 },
+  { src: P.leatherJacket, category: "Western", title: "Leather & Steel", h: 600 },
+  { src: P.couchSmile, category: "Editorial", title: "Amber Hour", h: 580 },
+  { src: P.kurtaFull, category: "Fashion", title: "Tailored in Rose", h: 620 },
+  { src: P.celebration, category: "Lifestyle", title: "Fairy Lights", h: 560 },
+  { src: P.kurtaSelfie, category: "Traditional", title: "Sun & Silk", h: 540 },
+  { src: P.kurtaPortrait, category: "Headshots", title: "Studio No. 01", h: 520 },
+  { src: P.couchMood, category: "Headshots", title: "The Quiet Frame", h: 560 },
+  { src: P.leatherJacket, category: "Lifestyle", title: "Off Duty", h: 560 },
+  { src: P.kurtaFull, category: "Commercial", title: "Menswear Campaign", h: 580 },
+  { src: P.couchSmile, category: "Commercial", title: "Warmth", h: 520 },
 ];
 
 export const CATEGORIES = [
   "All", "Headshots", "Editorial", "Commercial", "Fashion",
-  "Traditional", "Western", "Lifestyle", "Fitness", "Formal",
+  "Traditional", "Western", "Lifestyle",
 ] as const;
 
 export const MEASUREMENTS = [
@@ -38,7 +50,7 @@ export const MEASUREMENTS = [
   { label: "Hair", value: "Black", sub: "Wavy · Medium" },
   { label: "Eyes", value: "Dark Brown", sub: "Almond" },
   { label: "Skin Tone", value: "Wheatish", sub: "Warm undertone" },
-  { label: "Languages", value: "Hindi · English", sub: "Punjabi · Marathi" },
+  { label: "Languages", value: "Hindi · English", sub: "Punjabi" },
   { label: "Special Skills", value: "Horse riding", sub: "Boxing · Dance · Driving" },
 ];
 
@@ -56,7 +68,7 @@ export const EXPERIENCE = [
 
 export const TESTIMONIALS = [
   { quote: "A rare presence — cinematic on camera and generous on set. He belongs to the next generation of Indian leading men.", author: "Casting Director", org: "Mumbai" },
-  { quote: "Aarav delivers editorial precision with commercial warmth. A dream to shoot.", author: "Photographer", org: "Vogue India" },
+  { quote: "Aditya delivers editorial precision with commercial warmth. A dream to shoot.", author: "Photographer", org: "Vogue India" },
   { quote: "One of the most exciting new faces we've placed this year.", author: "Agency Director", org: "Elite Model Management" },
 ];
 
