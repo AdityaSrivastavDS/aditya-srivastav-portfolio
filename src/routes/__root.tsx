@@ -47,8 +47,8 @@ function Nav() {
       >
         <div className="container-luxe flex h-20 items-center justify-between">
           <Link to="/" className="group flex items-baseline gap-2">
-            <span className="font-display text-xl tracking-widest text-white">AARAV</span>
-            <span className="font-display text-xl tracking-widest text-gold">MEHRA</span>
+            <span className="font-display text-xl tracking-widest text-white">ADITYA</span>
+            <span className="font-display text-xl tracking-widest text-gold">SRIVASTAV</span>
           </Link>
           <nav className="hidden lg:flex items-center gap-9">
             {NAV.map((item) => (
@@ -80,7 +80,7 @@ function Nav() {
         <div className="fixed inset-0 z-[60] bg-black animate-fade-in lg:hidden">
           <div className="container-luxe flex h-20 items-center justify-between">
             <span className="font-display text-xl tracking-widest text-white">
-              AARAV <span className="text-gold">MEHRA</span>
+              ADITYA <span className="text-gold">SRIVASTAV</span>
             </span>
             <button onClick={() => setOpen(false)} className="text-white p-2" aria-label="Close menu">
               <X className="h-6 w-6" />
@@ -109,7 +109,7 @@ function Footer() {
       <div className="container-luxe py-20 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="font-display text-3xl text-white">
-            Aarav <span className="text-gold">Mehra</span>
+            Aditya <span className="text-gold">Srivastav</span>
           </div>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-white/60">
             Actor. Model. Commercial talent. Represented for editorial, campaigns, and film across
@@ -127,9 +127,9 @@ function Footer() {
         <div>
           <div className="eyebrow mb-4">Contact</div>
           <ul className="space-y-2 text-sm text-white/70">
-            <li>bookings@aaravmehra.com</li>
+            <li>adityasrivastav0306@gmail.com</li>
             <li>+91 98•••• ••••</li>
-            <li>Mumbai · India</li>
+            <li>Noida · India</li>
             <li className="pt-3">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-gold transition-colors">
                 <Instagram className="h-4 w-4" /> Instagram
@@ -140,7 +140,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-luxe py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] tracking-widest uppercase text-white/40">
-          <span>© {new Date().getFullYear()} Aarav Mehra. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} ADITYA SRIVASTAV. ALL RIGHTS RESERVED.</span>
           <span>Represented worldwide.</span>
         </div>
       </div>
@@ -188,19 +188,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aarav Mehra — Actor · Model · Commercial Talent" },
+      { title: "Aditya Srivastav — Actor · Model · Commercial Talent" },
       {
         name: "description",
         content:
-          "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai.",
+          "Cinematic portfolio of Aditya Srivastav — actor, fashion model and commercial talent based in Noida.",
       },
-      { name: "author", content: "Aarav Mehra" },
-      { property: "og:title", content: "Aarav Mehra — Actor · Model · Commercial Talent" },
-      { property: "og:description", content: "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai." },
+      { name: "author", content: "Aditya Srivastav" },
+      { property: "og:title", content: "Aditya Srivastav — Actor · Model · Commercial Talent" },
+      { property: "og:description", content: "Cinematic portfolio of Aditya Srivastav — actor, fashion model and commercial talent based in Noida." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Aarav Mehra — Actor · Model · Commercial Talent" },
-      { name: "twitter:description", content: "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai." },
+      { name: "twitter:title", content: "Aditya Srivastav — Actor · Model · Commercial Talent" },
+      { name: "twitter:description", content: "Cinematic portfolio of Aditya Srivastav — actor, fashion model and commercial talent based in Noida." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85c94caf-335a-4e71-ab03-cfb3faa40b12/id-preview-2b1f2e41--890139af-0704-4f54-9ccf-3ee602a1d7b4.lovable.app-1784478730762.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85c94caf-335a-4e71-ab03-cfb3faa40b12/id-preview-2b1f2e41--890139af-0704-4f54-9ccf-3ee602a1d7b4.lovable.app-1784478730762.png" },
     ],
