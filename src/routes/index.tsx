@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Play } from "lucide-react";
-import hero from "@/assets/hero.jpg";
-import { BRANDS, TESTIMONIALS, PORTFOLIO } from "@/lib/site-data";
+import { BRANDS, TESTIMONIALS, PORTFOLIO, HERO_IMAGE } from "@/lib/site-data";
+const hero = HERO_IMAGE;
 
 export const Route = createFileRoute("/")({
   head: () => ({
