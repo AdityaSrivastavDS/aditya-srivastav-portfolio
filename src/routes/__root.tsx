@@ -192,13 +192,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Official portfolio of Aarav Mehra — Indian actor, fashion model and commercial talent. Editorial, campaigns, film and television.",
+          "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai.",
       },
       { name: "author", content: "Aarav Mehra" },
       { property: "og:title", content: "Aarav Mehra — Actor · Model · Commercial Talent" },
-      { property: "og:description", content: "Editorial, campaigns, film and television." },
+      { property: "og:description", content: "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Aarav Mehra — Actor · Model · Commercial Talent" },
+      { name: "twitter:description", content: "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85c94caf-335a-4e71-ab03-cfb3faa40b12/id-preview-2b1f2e41--890139af-0704-4f54-9ccf-3ee602a1d7b4.lovable.app-1784478730762.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85c94caf-335a-4e71-ab03-cfb3faa40b12/id-preview-2b1f2e41--890139af-0704-4f54-9ccf-3ee602a1d7b4.lovable.app-1784478730762.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
