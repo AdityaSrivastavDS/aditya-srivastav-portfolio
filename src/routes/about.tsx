@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import p2 from "@/assets/p2.jpg";
-import p7 from "@/assets/p7.jpg";
+import { ABOUT_PORTRAIT, ABOUT_QUOTE_BG } from "@/lib/site-data";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
