@@ -42,16 +42,16 @@ export const CATEGORIES = [
 ] as const;
 
 export const MEASUREMENTS = [
-  { label: "Height", value: "6' 1\"", sub: "185 cm" },
-  { label: "Weight", value: "78 kg", sub: "172 lb" },
-  { label: "Chest", value: "40\"", sub: "102 cm" },
-  { label: "Waist", value: "32\"", sub: "81 cm" },
-  { label: "Shoe Size", value: "UK 9", sub: "EU 43" },
-  { label: "Hair", value: "Black", sub: "Wavy · Medium" },
-  { label: "Eyes", value: "Dark Brown", sub: "Almond" },
-  { label: "Skin Tone", value: "Wheatish", sub: "Warm undertone" },
+  { label: "Height", value: "5' 7\"", sub: "170 cm" },
+  { label: "Weight", value: "67 kg", sub: "147 lb" },
+  { label: "Chest", value: "39\"", sub: "99 cm" },
+  { label: "Waist", value: "34\"", sub: "86 cm" },
+  { label: "Shoe Size", value: "UK 7", sub: "" },
+  { label: "Hair", value: "Black", sub: "Straight · Medium" },
+  { label: "Eyes", value: "Dark Black", sub: "" },
+  { label: "Skin Tone", value: "Yellowsih", sub: "Warm undertone" },
   { label: "Languages", value: "Hindi · English", sub: "Punjabi" },
-  { label: "Special Skills", value: "Horse riding", sub: "Boxing · Dance · Driving" },
+  { label: "Special Skills", value: "Singing", sub: "Badminton | Cooking" },
 ];
 
 export const EXPERIENCE = [
