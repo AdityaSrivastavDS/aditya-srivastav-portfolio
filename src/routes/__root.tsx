@@ -20,7 +20,6 @@ const NAV = [
   { to: "/showreel", label: "Showreel" },
   { to: "/about", label: "About" },
   { to: "/measurements", label: "Measurements" },
-  { to: "/experience", label: "Experience" },
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -131,7 +130,7 @@ function Footer() {
             <li>+91 98•••• ••••</li>
             <li>Noida · India</li>
             <li className="pt-3">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-gold transition-colors">
+              <a href="https://www.instagram.com/adityalives/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-gold transition-colors">
                 <Instagram className="h-4 w-4" /> Instagram
               </a>
             </li>

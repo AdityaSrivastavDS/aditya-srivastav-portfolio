@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Play } from "lucide-react";
-import { BRANDS, TESTIMONIALS, PORTFOLIO, HERO_IMAGE } from "@/lib/site-data";
+import { TESTIMONIALS, PORTFOLIO, HERO_IMAGE } from "@/lib/site-data";
 const hero = HERO_IMAGE;
 
 export const Route = createFileRoute("/")({
@@ -134,17 +134,6 @@ function Home() {
         </div>
       </section>
 
-      {/* BRANDS MARQUEE */}
-      <section className="border-y border-white/10 py-10 overflow-hidden">
-        <p className="eyebrow text-center mb-8">Brands & Collaborations</p>
-        <div className="flex whitespace-nowrap animate-marquee">
-          {[...BRANDS, ...BRANDS].map((b, i) => (
-            <span key={i} className="mx-12 font-display text-2xl text-white/40 tracking-widest">
-              {b}
-            </span>
-          ))}
-        </div>
-      </section>
 
       {/* TESTIMONIALS */}
       <section className="container-luxe py-32 md:py-48">
