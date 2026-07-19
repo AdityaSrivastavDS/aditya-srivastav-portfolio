@@ -7,8 +7,8 @@ import { BRANDS, TESTIMONIALS, PORTFOLIO } from "@/lib/site-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aarav Mehra — Actor · Model · Commercial Talent" },
-      { name: "description", content: "Cinematic portfolio of Aarav Mehra — actor, fashion model and commercial talent based in Mumbai." },
+      { title: "Aditya Srivastav — Actor · Model · Commercial Talent" },
+      { name: "description", content: "Cinematic portfolio of Aditya Srivastav — actor, fashion model and commercial talent based in Noida." },
     ],
   }),
   component: Home,
@@ -22,7 +22,7 @@ function Home() {
         <div className="absolute inset-0">
           <img
             src={hero}
-            alt="Aarav Mehra"
+            alt="Aditya Srivastav"
             className="h-full w-full object-cover object-center animate-ken-burns"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black" />
@@ -44,8 +44,8 @@ function Home() {
             transition={{ delay: 0.6, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="mt-6 font-display text-[16vw] leading-[0.85] tracking-tight text-white md:text-[10vw] lg:text-[8.5rem]"
           >
-            Aarav<br />
-            <span className="italic font-serif font-light text-gold">Mehra</span>
+            Aditya<br />
+            <span className="italic font-serif font-light text-gold">Srivastav</span>
           </motion.h1>
           <motion.div
             initial={{ opacity: 0 }}
@@ -90,7 +90,7 @@ function Home() {
             </h2>
             <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/70 font-serif">
               Trained across method and camera acting with an editorial modelling career that spans
-              luxury menswear, jewellery and lifestyle. Aarav brings a stillness that reads on
+              luxury menswear, jewellery and lifestyle. Aditya brings a stillness that reads on
               screen and a versatility that reads in print.
             </p>
           </div>
